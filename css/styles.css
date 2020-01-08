@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+}
+
+.page-width {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #000099;
+}
+
+.site-header {
+  padding: 10px 0;
+  background-color: blue;
+  color: white;
+}
+
+.site-footer {
+  padding: 10px 0;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.section-cta {
+  background-color: black;
+  color: white;
+}
+
+.cta {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta__heading {
+  font-size: 31px;
+}
+.cta__button {
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.section-newsletter {
+  background-color: black;
+  color: white;
+}
+.newsletter {
+  padding: 20px 0;
+}
+.newsletter__heading {
+  margin-bottom: 10px;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter__input {
+  font-size: 22px;
+}
+
+.newsletter__button {
+  margin-left: 10px;
+}
+
+/* Components */
+.card {
+  padding: 20px;
+  text-align: center;
+  background: blue;
+  color: white;
+  margin: 0 15px;
+}
+.card__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card__body {
+  background-color: white;
+  color: blue;
+  border-radius: 1%;
+  padding: 10px;
+}
+
+/* Responsive Breakpoints */
+
+/**  Widescreen sizes ($desktop-wide) **/
+@media screen and (min-width: 1050px) {
+  .cta__heading {
+    font-size: 36px;
+  }
+  .newsletter__heading {
+    font-size: 31px;
+  }
+}
+/** Medium screen sizes ($desktop-medium) **/
+@media screen and (min-width: 960px) and (max-width: 1050px) {
+
+}
+
+/** Desktop Medium and Wide Screen sizes ($desktop-medium-and-wide) **/
+@media screen and (min-width: 960px) {
+
+}
+
+/** Dektop screen sizes ($desktop) **/
+@media screen and (min-width: 768px) {
+
+}
+
+/** Tablet screen sizes ($tablet) **/
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .card__body {
+    font-size: smaller;
+  }
+}
+
+/** Mobile screen sizes ($mobile) **/
+@media screen and (max-width: 767px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .site-header__title {
+    padding: 0 10px;
+  }
+}
