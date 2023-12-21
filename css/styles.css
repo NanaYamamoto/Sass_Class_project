@@ -28,19 +28,20 @@ body {
 }
 
 .btn {
-  background-color: blue;
+  background-color: lightblue;
   color: white;
   padding: 10px 20px;
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #000099;
 }
 
 .site-header {
   padding: 10px 0;
-  background-color: blue;
+  background-color: lightblue;
   color: white;
 }
 
@@ -63,11 +64,14 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .cta__heading {
   font-size: 31px;
 }
+
 .cta__button {
   display: inline-block;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -79,9 +83,11 @@ body {
   background-color: black;
   color: white;
 }
+
 .newsletter {
   padding: 20px 0;
 }
+
 .newsletter__heading {
   margin-bottom: 10px;
 }
@@ -104,14 +110,16 @@ body {
 .card {
   padding: 20px;
   text-align: center;
-  background: blue;
+  background: lightblue;
   color: white;
   margin: 0 15px;
 }
+
 .card__title {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
 .card__body {
   background-color: white;
   color: blue;
@@ -120,7 +128,6 @@ body {
 }
 
 /* Responsive Breakpoints */
-
 /**  Widescreen sizes ($desktop-wide) **/
 @media screen and (min-width: 1050px) {
   .cta__heading {
@@ -131,27 +138,14 @@ body {
   }
 }
 /** Medium screen sizes ($desktop-medium) **/
-@media screen and (min-width: 960px) and (max-width: 1050px) {
-
-}
-
 /** Desktop Medium and Wide Screen sizes ($desktop-medium-and-wide) **/
-@media screen and (min-width: 960px) {
-
-}
-
 /** Dektop screen sizes ($desktop) **/
-@media screen and (min-width: 768px) {
-
-}
-
 /** Tablet screen sizes ($tablet) **/
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .card__body {
     font-size: smaller;
   }
 }
-
 /** Mobile screen sizes ($mobile) **/
 @media screen and (max-width: 767px) {
   .flex-row {
@@ -163,4 +157,4 @@ body {
   .site-header__title {
     padding: 0 10px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
