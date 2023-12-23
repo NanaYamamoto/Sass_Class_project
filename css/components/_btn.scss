@@ -1,0 +1,11 @@
+%btn {
+    background-color: $color-bg-primary;
+    color: $color-font-bright;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color-bg-primary, 20%);
+    }
+}

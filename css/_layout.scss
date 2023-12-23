@@ -1,0 +1,13 @@
+.page-width {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-row {
+    display: flex;
+
+    @include media-query(mobile) {
+        flex-direction: column;
+    }
+}

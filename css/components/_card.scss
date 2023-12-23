@@ -1,0 +1,19 @@
+.card {
+    padding: 20px;
+    text-align: center;
+    background: $color-bg-primary;
+    color: $color-font-bright;
+    margin: 0 15px;
+
+    &:not(:last-child) {
+        @include media-query(mobile) {
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+.card__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

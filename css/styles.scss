@@ -1,93 +1,13 @@
-//Colors
-$color-font-primary: blue;
-$color-font-default: #777;
-$color-font-bright: white;
-$color-bg-primary: blue;
-$color-bg-dark: black;
-$color-bg-light: white;
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components/card';
+@import 'components/btn';
 
-/* Responsive Breakpoints */
-@mixin media-query($size) {
-    @if $size ==desktop-wide {
-        @media screen and (min-width: 1050px) {
-            @content;
-        }
-    }
-
-    @else if $size ==desktop-medium {
-        @media screen and (min-width: 960px) and (max-width: 1050px) {
-            @content;
-        }
-    }
-
-    @else if $size ==desktop-medium-and-wide {
-        @media screen and (min-width: 960px) {
-            @content;
-        }
-    }
-
-    @else if $size ==desktop {
-        @media screen and (min-width: 768px) {
-            @content;
-        }
-    }
-
-    @else if $size ==tablet {
-        @media screen and (min-width: 768px) and (max-width: 960px) {
-            @content;
-        }
-    }
-
-    @else if $size ==mobile {
-        @media screen and (max-width: 767px) {
-            @content;
-        }
-    }
-}
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-font-primary;
-}
-
-.page-width {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.flex-row {
-    display: flex;
-
-    @include media-query(mobile) {
-        flex-direction: column;
-    }
-}
 
 .text-center {
     text-align: center;
-}
-
-%btn {
-    background-color: $color-bg-primary;
-    color: $color-font-bright;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &:hover {
-        background-color: darken($color-bg-primary, 20%);
-    }
 }
 
 .site-header {
@@ -171,37 +91,4 @@ body {
 .newsletter__button {
     @extend %btn;
     margin-left: 10px;
-}
-
-/* Components */
-.card {
-    padding: 20px;
-    text-align: center;
-    background: $color-bg-primary;
-    color: $color-font-bright;
-    margin: 0 15px;
-
-    &:not(:last-child) {
-        @include media-query(mobile) {
-            margin-bottom: 15px;
-        }
-
-    }
-}
-
-.card__title {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.card__body {
-    background-color: $color-bg-light;
-    color: $color-font-primary;
-    border-radius: 1%;
-    padding: 10px;
-
-    @include media-query(tablet) {
-        font-size: smaller;
-    }
-
 }

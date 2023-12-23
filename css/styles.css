@@ -29,8 +29,35 @@ body {
   }
 }
 
-.text-center {
+/* Components */
+.card {
+  padding: 20px;
   text-align: center;
+  background: blue;
+  color: white;
+  margin: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.card__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card__body {
+  background-color: white;
+  color: blue;
+  border-radius: 1%;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .card__body {
+    font-size: smaller;
+  }
 }
 
 .newsletter__button, .cta__button {
@@ -42,6 +69,10 @@ body {
 }
 .newsletter__button:hover, .cta__button:hover {
   background-color: #000099;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .site-header {
@@ -125,35 +156,4 @@ body {
 
 .newsletter__button {
   margin-left: 10px;
-}
-
-/* Components */
-.card {
-  padding: 20px;
-  text-align: center;
-  background: blue;
-  color: white;
-  margin: 0 15px;
-}
-@media screen and (max-width: 767px) {
-  .card:not(:last-child) {
-    margin-bottom: 15px;
-  }
-}
-
-.card__title {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.card__body {
-  background-color: white;
-  color: blue;
-  border-radius: 1%;
-  padding: 10px;
-}
-@media screen and (min-width: 768px) and (max-width: 960px) {
-  .card__body {
-    font-size: smaller;
-  }
 }/*# sourceMappingURL=styles.css.map */
